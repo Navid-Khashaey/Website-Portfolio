@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.jumbotron {
+    background-color: #298bee;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+body {
+    background: linear-gradient(to bottom, #ffffff, #e0f7fa, #d3d3d3); /* White to light blue to grey */
+    font-family: Arial, sans-serif;
+}
+
+.jumbotron {
+    background-color: #e0f7fa; /* Light blue background */
+    color: black; /* Ensure text is readable */
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff; /* White background for cards */
+    color: black;
+    border: 1px solid #d3d3d3; /* Grey border */
+}
+
+.navbar-light {
+    background-color: #d3d3d3; /* Light grey background for navbar */
+}
+
+h1, h5 {
+    color: #333333; /* Dark grey for headings */
+}
+
