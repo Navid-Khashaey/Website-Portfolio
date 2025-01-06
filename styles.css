@@ -1,17 +1,21 @@
 /* General Background */
 body {
-    background-color: #E6F0FF;  /* Soft light blue background */
-    color: #333333;  /* Dark gray text */
+    background-color: #F0F8FF;  /* Light Alice Blue background */
+    color: #2F4F4F;  /* Dark Slate Gray text */
     font-family: Arial, sans-serif;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #003366;  /* Deep blue background */
+    background-color: #333333;  /* Dark gray background */
 }
 
 .navbar a {
     color: white !important;  /* White text for links */
+}
+
+.navbar-toggler-icon {
+    background-color: #ff7f50;  /* Coral color for toggler icon */
 }
 
 /* Main Content */
@@ -21,7 +25,7 @@ body {
 
 /* Welcome Section */
 .text-center h1 {
-    color: #003366;  /* Deep blue text for main heading */
+    color: #ff7f50;  /* Coral text for main heading */
 }
 
 /* About Me Section */
@@ -29,15 +33,16 @@ body {
     background-color: #ffffff;  /* White background for sections */
     padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 30px;
 }
 
 #about-me h2, #about-me h3 {
-    color: #003366;  /* Deep blue headings for About Me section */
+    color: #2F4F4F;  /* Dark Slate Gray headings */
 }
 
 #about-me p {
-    color: #333333;  /* Dark gray text */
+    color: #2F4F4F;  /* Dark Slate Gray text */
 }
 
 /* Skill Icons */
@@ -48,12 +53,12 @@ body {
 
 #about-me div p {
     margin-top: 10px;
-    color: #003366;  /* Deep blue text for skill names */
+    color: #2F4F4F;  /* Dark Slate Gray text for skill names */
 }
 
 /* Buttons */
 button, .btn {
-    background-color: #003366;  /* Deep blue button */
+    background-color: #ff7f50;  /* Coral button color */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -63,15 +68,33 @@ button, .btn {
 }
 
 button:hover, .btn:hover {
-    background-color: #003366;  /* No hover effect, stays deep blue */
+    background-color: #ff6347;  /* Darker Coral on hover */
 }
 
 /* Footer */
 footer {
-    background-color: #003366;  /* Deep blue footer */
+    background-color: #333333;  /* Dark gray footer */
     color: white;
     padding: 10px;
     text-align: center;
     margin-top: 50px;
 }
 
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #333333;  /* Dark gray background on smaller screens */
+    }
+
+    .text-center h1 {
+        font-size: 24px;
+    }
+
+    #about-me {
+        padding: 15px;
+    }
+
+    #about-me img {
+        width: 100px;  /* Resize profile picture for smaller screens */
+    }
+}
