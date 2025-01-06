@@ -1,49 +1,77 @@
+/* General Background */
 body {
+    background-color: #E6F0FF;  /* Soft light blue background */
+    color: #333333;  /* Dark gray text */
     font-family: Arial, sans-serif;
 }
 
-.navbar-brand {
-    font-weight: bold;
+/* Navbar */
+.navbar {
+    background-color: #003366;  /* Deep blue background */
 }
 
-.jumbotron {
-    background-color: #298bee;
+.navbar a {
+    color: white !important;  /* White text for links */
 }
 
-.card {
-    margin-bottom: 20px;
-}
-
+/* Main Content */
 .container {
     margin-top: 50px;
 }
 
-img {
-    border-radius: 50%;
+/* Welcome Section */
+.text-center h1 {
+    color: #003366;  /* Deep blue text for main heading */
 }
 
-body {
-    background: linear-gradient(to bottom, #ffffff, #e0f7fa, #d3d3d3); /* White to light blue to grey */
-    font-family: Arial, sans-serif;
-}
-
-.jumbotron {
-    background-color: #e0f7fa; /* Light blue background */
-    color: black; /* Ensure text is readable */
+/* About Me Section */
+#about-me {
+    background-color: #ffffff;  /* White background for sections */
     padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
 }
 
-.card {
-    background-color: #ffffff; /* White background for cards */
-    color: black;
-    border: 1px solid #d3d3d3; /* Grey border */
+#about-me h2, #about-me h3 {
+    color: #003366;  /* Deep blue headings for About Me section */
 }
 
-.navbar-light {
-    background-color: #d3d3d3; /* Light grey background for navbar */
+#about-me p {
+    color: #333333;  /* Dark gray text */
 }
 
-h1, h5 {
-    color: #333333; /* Dark grey for headings */
+/* Skill Icons */
+#about-me img {
+    border-radius: 5px;
+    width: 50px;
+}
+
+#about-me div p {
+    margin-top: 10px;
+    color: #003366;  /* Deep blue text for skill names */
+}
+
+/* Buttons */
+button, .btn {
+    background-color: #003366;  /* Deep blue button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    background-color: #003366;  /* No hover effect, stays deep blue */
+}
+
+/* Footer */
+footer {
+    background-color: #003366;  /* Deep blue footer */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
 }
 
