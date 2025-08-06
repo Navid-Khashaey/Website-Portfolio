@@ -89,8 +89,8 @@ body {
 }
 
 .skill-icon {
-    width: 10px;
-    height: 15px ;
+    width: 30px;
+    height: 30px ;
     object-fit: contain;
     display: block;
     margin: 0 auto 10px;
