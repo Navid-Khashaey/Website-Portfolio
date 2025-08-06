@@ -1,21 +1,26 @@
 /* General Background */
 body {
-    background-color: #F0F8FF;  /* Light Alice Blue background */
-    color: #2F4F4F;  /* Dark Slate Gray text */
+    background-color: #F0F8FF;
+    /* Light Alice Blue background */
+    color: #2F4F4F;
+    /* Dark Slate Gray text */
     font-family: Arial, sans-serif;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #333333;  /* Dark gray background */
+    background-color: #333333;
+    /* Dark gray background */
 }
 
 .navbar a {
-    color: white !important;  /* White text for links */
+    color: white !important;
+    /* White text for links */
 }
 
 .navbar-toggler-icon {
-    background-color: #ff7f50;  /* Coral color for toggler icon */
+    background-color: #ff7f50;
+    /* Coral color for toggler icon */
 }
 
 /* Main Content */
@@ -25,24 +30,29 @@ body {
 
 /* Welcome Section */
 .text-center h1 {
-    color: #ff7f50;  /* Coral text for main heading */
+    color: #ff7f50;
+    /* Coral text for main heading */
 }
 
 /* About Me Section */
 #about-me {
-    background-color: #ffffff;  /* White background for sections */
+    background-color: #ffffff;
+    /* White background for sections */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 30px;
 }
 
-#about-me h2, #about-me h3 {
-    color: #2F4F4F;  /* Dark Slate Gray headings */
+#about-me h2,
+#about-me h3 {
+    color: #2F4F4F;
+    /* Dark Slate Gray headings */
 }
 
 #about-me p {
-    color: #2F4F4F;  /* Dark Slate Gray text */
+    color: #2F4F4F;
+    /* Dark Slate Gray text */
 }
 
 /* Experience Section */
@@ -80,8 +90,10 @@ body {
 
 .skill-icon {
     width: 25px;
-    height: 25px;
-    margin-bottom: 5px;
+    height: 25px ;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px;
 }
 
 
@@ -110,12 +122,15 @@ body {
 
 #about-me div p {
     margin-top: 10px;
-    color: #2F4F4F;  /* Dark Slate Gray text for skill names */
+    color: #2F4F4F;
+    /* Dark Slate Gray text for skill names */
 }
 
 /* Buttons */
-button, .btn {
-    background-color: #ff7f50;  /* Coral button color */
+button,
+.btn {
+    background-color: #ff7f50;
+    /* Coral button color */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -124,13 +139,16 @@ button, .btn {
     cursor: pointer;
 }
 
-button:hover, .btn:hover {
-    background-color: #ff6347;  /* Darker Coral on hover */
+button:hover,
+.btn:hover {
+    background-color: #ff6347;
+    /* Darker Coral on hover */
 }
 
 /* Footer */
 footer {
-    background-color: #333333;  /* Dark gray footer */
+    background-color: #333333;
+    /* Dark gray footer */
     color: white;
     padding: 10px;
     text-align: center;
@@ -140,7 +158,8 @@ footer {
 /* Responsive Design for smaller screens */
 @media (max-width: 768px) {
     .navbar {
-        background-color: #333333;  /* Dark gray background on smaller screens */
+        background-color: #333333;
+        /* Dark gray background on smaller screens */
     }
 
     .text-center h1 {
@@ -152,6 +171,7 @@ footer {
     }
 
     #about-me img {
-        width: 100px;  /* Resize profile picture for smaller screens */
+        width: 100px;
+        /* Resize profile picture for smaller screens */
     }
 }
