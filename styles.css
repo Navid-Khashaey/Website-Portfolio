@@ -145,21 +145,31 @@ button:hover,
     /* Darker Coral on hover */
 }
 
-/* Footer */
+
 footer {
     background-color: #333333;
-    /* Dark gray footer */
     color: white;
     padding: 10px;
-    text-align: center;
     position: fixed;
-    text-align: center;
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: 1030;              
+    z-index: 1030;
     font-size: 0.9rem;
-    margin-top: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer .container {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Responsive Design for smaller screens */
