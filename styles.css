@@ -145,7 +145,6 @@ button:hover,
     /* Darker Coral on hover */
 }
 
-
 footer {
     background-color: #333333;
     color: white;
@@ -153,24 +152,31 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+    right: 0;              
     z-index: 1030;
     font-size: 0.9rem;
+
     
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;    
 }
 
-
+/* Override Bootstrap container inside footer */
 footer .container {
-    max-width: 100%;
-    padding-left: 0;
+    max-width: none;       
+    width: 100%;           
+    padding-left: 0;      
     padding-right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;    
 }
+
+
+body { padding-bottom: 60px; }
 
 /* Responsive Design for smaller screens */
 @media (max-width: 768px) {
