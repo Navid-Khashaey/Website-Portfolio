@@ -145,26 +145,31 @@ button:hover,
     /* Darker Coral on hover */
 }
 
-footer {
-    background-color: #333333;
-    color: white;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;              
-    z-index: 1030;
-    font-size: 0.9rem;
+footer{
+  background:#333333;
+  color:#fff;
+  padding:10px;
+  position:fixed;
+  left:0; right:0; bottom:0;
+  z-index:1030;
+  font-size:.9rem;
+  display:grid;          /* centres regardless of child width */
+  place-items:center;
+  text-align:center;
+}
 
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;    
+footer .container{
+  display:inline-block;
+  width:max-content;
+  padding:0;
+  margin:0;
+  text-align:center;
 }
 
 
-body { padding-bottom: 60px; }
+body {
+    padding-bottom: 60px;
+}
 
 /* Responsive Design for smaller screens */
 @media (max-width: 768px) {
