@@ -163,18 +163,6 @@ footer {
     text-align: center;    
 }
 
-/* Override Bootstrap container inside footer */
-footer .container {
-    max-width: none;       
-    width: 100%;           
-    padding-left: 0;      
-    padding-right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;    
-}
-
 
 body { padding-bottom: 60px; }
 
