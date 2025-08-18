@@ -1,114 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Navid's Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Navid's Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navid Khashaey Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navid Khashaey Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-
-
-    <!-- About Me Section -->
-    <section id="hero" class="d-flex align-items-center justify-content-center mt-5">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-4 text-center">
-                    <img src="IMG_6401.jpg" alt="Navid Khashaey" class="img-fluid rounded-lg profile-img">
-                </div>
-                <div class="col-md-6 info-box text-center text-md-left p-4">
-                    <p class="greeting">Hello, I'm</p>
-                    <h1 class="name">Navid Khashaey</h1>
-                    <h4 class="role">Aspring Software Engineer/Developer</h4>
-
-
-                    <!-- Right: Heading + cards + paragraph -->
-                    <div class="col-md-8">
-                        <h1 class="mb-4 text-center text-md-left">About Me</h1>
-
-                        <!-- Cards row (Education / Experience) -->
-                        <div class="row">
-                            <div class="col-sm-6 mb-3">
-                                <div class="skill-category h-100">
-                                    <div class="mb-2" aria-hidden="true" style="font-size: 2rem;">🎓</div>
-                                    <h3 class="h5 mb-2">Education</h3>
-                                    <p class="mb-0">
-                                        BSc (Hons) Computer Science<br />
-                                        <em>(First Class Graduate)</em>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 mb-3">
-                                <div class="skill-category h-100">
-                                    <div class="mb-2" aria-hidden="true" style="font-size: 2rem;">💼</div>
-                                    <h3 class="h5 mb-2">Experience</h3>
-                                    <p class="mb-0">
-                                        2025 – Present<br />
-                                        Software Engineering roles & volunteering
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Professional summary -->
-                        <p class="mt-3">
-                            I am a results-driven developer with a solid grounding in software engineering and a clear
-                            focus on
-                            building reliable, user-centred systems. I work across Python, Java, JavaScript, and
-                            Flutter, and I
-                            am comfortable with frameworks and tooling such as Flask, Bootstrap, Git, and CI workflows.
-                            My
-                            recent work spans AI-assisted applications, mobile interfaces, and clean API integrations. I
-                            value
-                            code clarity, testing discipline, and measurable impact. I am seeking opportunities where I
-                            can ship
-                            production-quality software, learn fast, and contribute to high-performing teams.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-            <footer class="mt-5">
-                <div class="footer-inner">© <span id="year"></span> Navid Khashaey</div>
-
-            </footer>
-
-        </div>
-        </div>
-        </div>
-    </section>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+  <!-- Hero -->
+  <section id="hero" class="container hero-wrapper">
+    <div class="row align-items-center">
+      <!-- Photo left -->
+      <div class="col-md-5 mb-4 mb-md-0">
+        <img src="IMG_6401.jpg" alt="Navid Khashaey" class="img-fluid hero-photo rounded">
+      </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+      <!-- Text right -->
+      <div class="col-md-7">
+        <p class="greeting mb-1">Hello, I'm</p>
+        <h1 class="name display-4 mb-2">Navid Khashaey</h1>
+        <p class="role lead mb-3">Aspiring Software Engineer / Developer</p>
+
+        <hr class="hero-divider">
+
+        <h2 class="h3 mt-3 mb-3">About Me</h2>
+
+        <!-- Education / Experience chips -->
+        <div class="row">
+          <div class="col-sm-6 mb-3">
+            <div class="info-chip">
+              <div class="chip-emoji" aria-hidden="true">🎓</div>
+              <div>
+                <h3 class="h5 mb-1">Education</h3>
+                <p class="mb-0">BSc (Hons) Computer Science<br><em>(First Class Graduate)</em></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-3">
+            <div class="info-chip">
+              <div class="chip-emoji" aria-hidden="true">💼</div>
+              <div>
+                <h3 class="h5 mb-1">Experience</h3>
+                <p class="mb-0">2025 – Present<br>Software Engineering roles &amp; volunteering</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Summary -->
+        <p class="mt-2 mb-0">
+          I am a results-driven developer with a solid grounding in software engineering and a clear
+          focus on building reliable, user-centred systems. I work across Python, Java, JavaScript, and
+          Flutter, and I am comfortable with frameworks and tooling such as Flask, Bootstrap, Git, and CI
+          workflows. My recent work spans AI-assisted applications, mobile interfaces, and clean API
+          integrations. I value code clarity, testing discipline, and measurable impact. I am seeking
+          opportunities where I can ship production-quality software, learn fast, and contribute to
+          high-performing teams.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Centred sticky footer (outside containers) -->
+  <footer id="site-footer">
+    © <span id="year"></span> Navid Khashaey
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
