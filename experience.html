@@ -1,149 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Experience - Navid's Portfolio</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Experience - Navid's Portfolio</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-    <!-- Font Awesome (icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <!-- Your site styles -->
-    <link rel="stylesheet" href="css/styles.css" />
+  <!-- Bootstrap + Icons -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="css/styles.css"/>
 </head>
-
 <body>
 
-    <!-- Navigation (match the rest of your site) -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand text-white" href="#">Navid's Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item active"><a class="nav-link" href="experience.html">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <!-- Nav (matches your site) -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand text-white" href="#">Navid's Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item active"><a class="nav-link" href="experience.html">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Experience Hero -->
-    <header class="container xp-hero">
-        <h1 class="mb-2">Experience</h1>
-        <p class="lead text-muted mb-4">
-            A snapshot of the roles, projects, and responsibilities that shaped how I build software.
+  <!-- Hero + quick stats -->
+  <header class="container xp-hero">
+    <h1 class="mb-2">Experience</h1>
+    <p class="lead text-muted mb-4">A snapshot of the roles, projects, and responsibilities that shaped how I build software.</p>
+
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="xp-stat">
+          <i class="fa-solid fa-code"></i>
+          <div>
+            <div class="label">Core Stack</div>
+            <div class="value">Java · Python · C# (learning) · JavaScript · Dart/Flutter</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="xp-stat">
+          <i class="fa-solid fa-database"></i>
+          <div>
+            <div class="label">Data & Cloud</div>
+            <div class="value">SQL · phpMyAdmin · AWS (82%) · GCP (learning)</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="xp-stat">
+          <i class="fa-solid fa-vial"></i>
+          <div>
+            <div class="label">Dev Practices</div>
+            <div class="value">OOP · Git/GitHub · PyTest · JUnit · CI/CD fundamentals</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Professional Experience (timeline) -->
+    <h2 class="section-title">Professional Experience</h2>
+    <section class="timeline">
+
+      <article class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3 class="h5 mb-1">Peer Navigator · Birmingham City University</h3>
+          <div class="xp-meta">Sep 2024 – May 2025</div>
+          <ul class="xp-list">
+            <li>Provided peer support and guidance to help students navigate academic and social systems.</li>
+            <li>Collaborated with staff and fellow navigators; applied problem solving and active listening to address student concerns.</li>
+            <li>Strengthened teamwork, communication, and facilitation skills in a fast-moving environment.</li>
+          </ul>
+          <div class="xp-tags"><span>Mentoring</span><span>Collaboration</span><span>Communication</span></div>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3 class="h5 mb-1">Sales Assistant · Primark</h3>
+          <div class="xp-meta">Jun 2023 – Present</div>
+          <ul class="xp-list">
+            <li>Delivered excellent customer service while processing in-store and online orders.</li>
+            <li>Maintained safety and accuracy standards; collaborated closely with customers and colleagues.</li>
+            <li>Built resilience and time-management skills under pressure and during peak periods.</li>
+          </ul>
+          <div class="xp-tags"><span>Customer Service</span><span>Teamwork</span><span>Operations</span></div>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3 class="h5 mb-1">Team Member · Papa John’s</h3>
+          <div class="xp-meta">Nov 2022 – Jul 2023</div>
+          <ul class="xp-list">
+            <li>Maintained a clean, organised workspace to support productivity and quality.</li>
+            <li>Managed multiple tasks effectively in a fast-paced setting.</li>
+          </ul>
+          <div class="xp-tags"><span>Multitasking</span><span>Process</span><span>Reliability</span></div>
+        </div>
+      </article>
+
+      <article class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3 class="h5 mb-1">Springpod Virtual Work Experience</h3>
+          <div class="xp-meta">Oct 2021 – Nov 2021</div>
+          <ul class="xp-list">
+            <li>Explored career paths through group discussions, activities, and quizzes.</li>
+            <li>Built confidence by participating in individual and collaborative tasks across fields.</li>
+          </ul>
+          <div class="xp-tags"><span>Career Exploration</span><span>Collaboration</span></div>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Featured Projects -->
+    <h2 class="section-title mt-4">Featured Projects</h2>
+    <div class="row">
+      <!-- FYP -->
+      <div class="col-md-4 mb-3">
+        <div class="project-card h-100">
+          <h3 class="h5 mb-1">AI Heart Rate Monitor (Dissertation · 75%)</h3>
+          <div class="xp-meta">Sep 2024 – Jun 2025</div>
+          <p class="mb-2">
+            Mobile app for real-time heart-rate monitoring using ML (Random Forest, K-Means) to flag arrhythmias.
+            Used synthetic/open datasets to simulate real-world conditions.
+          </p>
+          <div class="xp-tags">
+            <span>Python</span><span>Dart/Flutter</span><span>ML</span><span>Random Forest</span><span>K-Means</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food & Nutrition Tracker -->
+      <div class="col-md-4 mb-3">
+        <div class="project-card h-100">
+          <h3 class="h5 mb-1">Food & Nutrition Tracker (81%)</h3>
+          <div class="xp-meta">Mar 2025 – May 2025</div>
+          <p class="mb-2">
+            Android app enabling nutrition tracking, recipes, and personalised goals with Firebase Firestore and
+            Retrofit integration with TheMealDB.
+          </p>
+          <div class="xp-tags">
+            <span>Java</span><span>Android</span><span>Firebase</span><span>Retrofit</span><span>REST API</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Connect Four -->
+      <div class="col-md-4 mb-3">
+        <div class="project-card h-100">
+          <h3 class="h5 mb-1">Connect Four (74%)</h3>
+          <div class="xp-meta">Nov 2023 – May 2023</div>
+          <p class="mb-2">
+            AI-driven Connect Four game using Python and declarative logic to optimise decision-making and counter user moves.
+          </p>
+          <div class="xp-tags">
+            <span>Python</span><span>Algorithms</span><span>Game Logic</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Skills (pills) -->
+    <h2 class="section-title mt-4">Technical Skills</h2>
+    <div class="skills-cloud">
+      <div>
+        <h4 class="h6 text-muted mb-2">Languages & OOP</h4>
+        <p class="mb-0">
+          <span>Java</span><span>Python</span><span>C# (learning)</span><span>Dart</span><span>JavaScript</span>
         </p>
+      </div>
+      <div>
+        <h4 class="h6 text-muted mb-2">Frameworks & UI</h4>
+        <p class="mb-0">
+          <span>Flutter</span><span>Flask</span><span>Bootstrap</span><span>HTML</span><span>CSS</span><span>PHP</span>
+        </p>
+      </div>
+      <div>
+        <h4 class="h6 text-muted mb-2">Data, Cloud & DevOps</h4>
+        <p class="mb-0">
+          <span>SQL</span><span>phpMyAdmin</span><span>AWS (82%)</span><span>GCP (learning)</span><span>CI/CD (fundamentals)</span>
+        </p>
+      </div>
+      <div>
+        <h4 class="h6 text-muted mb-2">Tools & Testing</h4>
+        <p class="mb-0">
+          <span>Git</span><span>GitHub</span><span>JUnit</span><span>PyTest</span>
+        </p>
+      </div>
+    </div>
 
-        <!-- Quick stats -->
-        <div class="row">
-            <div class="col-md-4 mb-3">
-                <div class="xp-stat">
-                    <i class="fa-solid fa-code"></i>
-                    <div>
-                        <div class="label">Core Stack</div>
-                        <div class="value">Python · Java · JavaScript · Flutter</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="xp-stat">
-                    <i class="fa-solid fa-diagram-project"></i>
-                    <div>
-                        <div class="label">Project Focus</div>
-                        <div class="value">AI-assisted apps · Mobile UIs · REST APIs</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="xp-stat">
-                    <i class="fa-solid fa-gears"></i>
-                    <div>
-                        <div class="label">Tooling</div>
-                        <div class="value">Flask · Bootstrap · Git · CI workflows</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    <!-- Education -->
+    <h2 class="section-title mt-4">Education</h2>
+    <div class="project-card">
+      <h3 class="h5 mb-1">BSc (Hons) Computer Science · First Class</h3>
+      <div class="xp-meta">Birmingham City University · Sep 2022 – Jun 2025</div>
+      <ul class="xp-list mb-2">
+        <li>Software Design (90%): team-based Agile, UML and requirements modelling.</li>
+        <li>Object-Oriented Programming (70%): Library Management System in Java (inheritance, encapsulation, polymorphism).</li>
+        <li>Data Structures & Algorithms (77%): applied DS&A to solve complex problems.</li>
+        <li>Computer Programming (76%): strong foundation in programming and problem solving.</li>
+      </ul>
+      <div class="xp-tags"><span>OOP</span><span>DS&A</span><span>Agile</span><span>UML</span></div>
+    </div>
 
-    <!-- Timeline -->
-    <main class="container">
-        <section class="timeline">
+   
 
-            <!-- Item 1 -->
-            <article class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <h3 class="h5 mb-1">Software Engineering – Projects & Volunteering</h3>
-                    <div class="xp-meta">2025 – Present</div>
-                    <ul class="xp-list">
-                        <li>Designed and built AI-assisted features and mobile-first interfaces; integrated REST APIs.
-                        </li>
-                        <li>Set up lightweight CI and systematic Git workflows for reliable delivery.</li>
-                        <li>Collaborated with teammates through code reviews, task boards, and structured releases.</li>
-                    </ul>
-                    <div class="xp-tags">
-                        <span>Python</span><span>Flask</span><span>Java</span><span>JavaScript</span><span>Flutter</span><span>Bootstrap</span><span>Git</span>
-                    </div>
-                </div>
-            </article>
+  <!-- Centred sticky footer -->
+  <footer id="site-footer">
+    © <span id="year"></span> Navid Khashaey
+  </footer>
 
-            <!-- Item 2 -->
-            <article class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <h3 class="h5 mb-1">BSc (Hons) Computer Science – Final Year & Group Work</h3>
-                    <div class="xp-meta">2022 – 2025 · First Class Graduate</div>
-                    <ul class="xp-list">
-                        <li>Delivered end-to-end project work: requirements, design, implementation, testing, and demos.
-                        </li>
-                        <li>Emphasised code clarity, automated testing, and measurable impact.</li>
-                        <li>Produced clean APIs and responsive UIs with a strong user-centred approach.</li>
-                    </ul>
-                    <div class="xp-tags">
-                        <span>Software Engineering</span><span>APIs</span><span>Testing</span><span>UX</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Item 3 -->
-            <article class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <h3 class="h5 mb-1">Web & Social Media Coordinator (Volunteering)</h3>
-                    <div class="xp-meta">2025 – Present</div>
-                    <ul class="xp-list">
-                        <li>Maintained content and improved clarity, accessibility, and responsiveness.</li>
-                        <li>Collaborated with stakeholders to refine messaging and simplify user journeys.</li>
-                    </ul>
-                    <div class="xp-tags">
-                        <span>Content</span><span>Accessibility</span><span>Performance</span>
-                    </div>
-                </div>
-            </article>
-
-        </section>
-
-
-
-        <!-- Centred sticky footer -->
-        <footer id="site-footer">
-            © <span id="year"></span> Navid Khashaey
-        </footer>
-
-        <script>
-            document.getElementById('year').textContent = new Date().getFullYear();
-        </script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>

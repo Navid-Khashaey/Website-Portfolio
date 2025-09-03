@@ -239,133 +239,70 @@ body {
         /* Resize profile picture for smaller screens */
     }
 
-    /* ---------- Experience page polish ---------- */
-    .xp-hero {
-        margin-top: 48px;
-    }
+    /* ---------- Experience page components ---------- */
+.xp-hero { margin-top: 48px; }
+.xp-hero h1 { color:#2F4F4F; font-weight:800; }
+.xp-hero .lead { color:#6c757d; }
 
-    .xp-hero h1 {
-        color: #2F4F4F;
-        font-weight: 800;
-    }
+/* Quick stats */
+.xp-stat{
+  display:flex; align-items:center; gap:12px;
+  background:#fff; border:1px solid rgba(2,32,71,.08);
+  border-radius:14px; padding:12px 14px;
+  box-shadow:0 4px 12px rgba(0,0,0,.06);
+}
+.xp-stat i{ font-size:1.35rem; color:#ff7f50; }
+.xp-stat .label{ font-size:.85rem; color:#6c757d; margin-bottom:2px; }
+.xp-stat .value{ font-weight:600; color:#2F4F4F; }
 
-    .xp-hero .lead {
-        color: #6c757d;
-    }
+/* Section titles */
+.section-title{ margin:24px 0 12px; font-weight:800; color:#2F4F4F; }
 
-    /* Quick stats row */
-    .xp-stat {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        background: #fff;
-        border: 1px solid rgba(2, 32, 71, .08);
-        border-radius: 14px;
-        padding: 12px 14px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, .06);
-    }
+/* Timeline */
+.timeline{ position:relative; margin: 8px 0 16px; padding-left:18px; }
+.timeline:before{ content:""; position:absolute; left:10px; top:0; bottom:0; width:2px; background:rgba(2,32,71,.15); }
+.timeline-item{ position:relative; margin-bottom:22px; }
+.timeline-marker{
+  position:absolute; left:2px; top:6px; width:16px; height:16px; border-radius:50%;
+  background:#ff7f50; box-shadow:0 0 0 4px rgba(255,127,80,.2);
+}
+.timeline-content{
+  background:#fff; border:1px solid rgba(2,32,71,.08);
+  border-radius:12px; padding:16px 18px; box-shadow:0 6px 16px rgba(0,0,0,.06);
+}
+.xp-meta{ font-size:.95rem; color:#6c757d; margin-bottom:6px; }
+.xp-list{ padding-left:18px; margin-bottom:8px; }
+.xp-list li{ margin-bottom:6px; }
 
-    .xp-stat i {
-        font-size: 1.35rem;
-        color: #ff7f50;
-    }
+/* Tags / pills */
+.xp-tags span{
+  display:inline-block; margin:4px 6px 0 0; padding:4px 10px;
+  background:#F0F8FF; color:#2F4F4F; border:1px solid rgba(2,32,71,.08);
+  border-radius:9999px; font-size:.85rem;
+}
 
-    .xp-stat .label {
-        font-size: .85rem;
-        color: #6c757d;
-        margin-bottom: 2px;
-    }
+/* Project cards */
+.project-card{
+  background:#fff; border:1px solid rgba(2,32,71,.08);
+  border-radius:12px; padding:16px 18px; box-shadow:0 6px 16px rgba(0,0,0,.06);
+}
 
-    .xp-stat .value {
-        font-weight: 600;
-        color: #2F4F4F;
-    }
+/* Skills cloud */
+.skills-cloud{
+  display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap:16px;
+}
+.skills-cloud p span{
+  display:inline-block; margin:4px 6px 0 0; padding:4px 10px;
+  background:#F0F8FF; color:#2F4F4F; border:1px solid rgba(2,32,71,.08);
+  border-radius:9999px; font-size:.9rem;
+}
 
-    /* Timeline */
-    .timeline {
-        position: relative;
-        margin: 12px 0 24px;
-        padding-left: 18px;
-    }
-
-    .timeline:before {
-        content: "";
-        position: absolute;
-        left: 10px;
-        top: 0;
-        bottom: 0;
-        width: 2px;
-        background: rgba(2, 32, 71, .15);
-    }
-
-    .timeline-item {
-        position: relative;
-        margin-bottom: 26px;
-    }
-
-    .timeline-marker {
-        position: absolute;
-        left: 2px;
-        top: 6px;
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        background: #ff7f50;
-        box-shadow: 0 0 0 4px rgba(255, 127, 80, .2);
-    }
-
-    .timeline-content {
-        background: #fff;
-        border: 1px solid rgba(2, 32, 71, .08);
-        border-radius: 12px;
-        padding: 16px 18px;
-        box-shadow: 0 6px 16px rgba(0, 0, 0, .06);
-    }
-
-    .xp-meta {
-        font-size: .95rem;
-        color: #6c757d;
-        margin-bottom: 6px;
-    }
-
-    .xp-list {
-        padding-left: 18px;
-        margin-bottom: 10px;
-    }
-
-    .xp-list li {
-        margin-bottom: 6px;
-    }
-
-    /* Skill/tech tags */
-    .xp-tags span {
-        display: inline-block;
-        margin: 4px 6px 0 0;
-        padding: 4px 10px;
-        background: #F0F8FF;
-        color: #2F4F4F;
-        border: 1px solid rgba(2, 32, 71, .08);
-        border-radius: 9999px;
-        font-size: .85rem;
-    }
-
-    /* Mobile */
-    @media (max-width: 576px) {
-        .xp-hero {
-            margin-top: 24px;
-        }
-
-        .timeline {
-            padding-left: 14px;
-        }
-
-        .timeline:before {
-            left: 8px;
-        }
-
-        .timeline-marker {
-            left: 0;
-        }
-    }
+@media (max-width: 576px){
+  .xp-hero{ margin-top:24px; }
+  .timeline{ padding-left:14px; }
+  .timeline:before{ left:8px; }
+  .timeline-marker{ left:0; }
+}
 
 }
