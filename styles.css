@@ -332,5 +332,42 @@ body {
   font-size:.85rem;
 }
 
+/* --- Projects: boxed cards --- */
+.project-card{
+  background: #ffffff;
+  border: 2px solid #e6edf3;         /* more visible than before */
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 6px 18px rgba(2, 32, 71, 0.06);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+
+.project-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(2, 32, 71, 0.12);
+  border-color: #d2dbe3;
+}
+
+/* keep nice spacing inside lists and badges */
+.project-card ul { margin-bottom: 12px; }
+.badge-tech{
+  display:inline-block;
+  background:#F0F8FF;
+  border:1px solid rgba(2,32,71,.12);
+  color:#2F4F4F;
+  font-weight:600;
+  border-radius: 9999px;
+  padding: 4px 10px;
+  margin: 3px 6px 0 0;
+  font-size: .85rem;
+}
+
+/* make the GitHub button feel consistent and full width */
+.project-card .btn{
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+
 
 }
