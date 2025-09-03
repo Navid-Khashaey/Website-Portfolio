@@ -1,100 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Navid's Portfolio</title>
+
+  <!-- Bootstrap + Icons -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navid's Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand text-white" href="#">Navid's Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+        <li class="nav-item active"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="container projects-hero text-center">
+    <h1 class="mb-2">My Projects</h1>
+    <p class="lead text-muted">A selection of recent work across mobile, web, and AI.</p>
+  </header>
+
+  <!-- Projects Grid -->
+  <main class="container">
+    <div class="row">
+
+      <!-- Project 1 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="project-card h-100 d-flex flex-column">
+          <div>
+            <h3 class="h5 mb-1">AI Heart Rate Monitor (Dissertation)</h3>
+            <p class="text-muted mb-2">Sep 2024 – Jun 2025</p>
+            <p class="mb-2">
+              Real-time heart-rate monitoring app using ML to flag arrhythmias, built with Python & Flutter.
+              Trained with synthetic/open datasets; Random Forest & K-Means used for anomaly detection.
+            </p>
+            <ul class="pl-3 mb-2">
+              <li>Live signal analysis & alerts</li>
+              <li>ML model evaluation & tuning</li>
+              <li>Mobile-first UX in Flutter</li>
             </ul>
+            <div class="mb-3">
+              <span class="badge badge-tech">Python</span>
+              <span class="badge badge-tech">Flutter/Dart</span>
+              <span class="badge badge-tech">ML</span>
+              <span class="badge badge-tech">Random Forest</span>
+              <span class="badge badge-tech">K-Means</span>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <!-- TODO: replace # with your repo URL -->
+            <a href="#" target="_blank" rel="noopener" class="btn btn-outline-dark btn-block">
+              <i class="fa-brands fa-github mr-1"></i> View on GitHub
+            </a>
+          </div>
         </div>
-    </nav>
+      </div>
 
-    <!-- Main Content -->
-    <div class="container mt-5">
-        <h1 class="text-center">My Projects</h1>
-        <div class="row" id="projects-list">
-            
-            <!-- Example Project 1 -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Project One</h5>
-                        <p class="card-text"> Dissertation ! </p>
-                    </div>
-                </div>
+      <!-- Project 2 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="project-card h-100 d-flex flex-column">
+          <div>
+            <h3 class="h5 mb-1">Food & Nutrition Tracker (Android)</h3>
+            <p class="text-muted mb-2">Mar 2025 – May 2025 · 81%</p>
+            <p class="mb-2">
+              Android app that supports healthier choices via nutrition tracking, recipes, and personalised goals.
+              Integrated Firebase Firestore and Retrofit with TheMealDB API.
+            </p>
+            <ul class="pl-3 mb-2">
+              <li>Auth & data storage with Firebase</li>
+              <li>REST consumption with Retrofit</li>
+              <li>Material-inspired UI</li>
+            </ul>
+            <div class="mb-3">
+              <span class="badge badge-tech">Java</span>
+              <span class="badge badge-tech">Android</span>
+              <span class="badge badge-tech">Firebase</span>
+              <span class="badge badge-tech">Retrofit</span>
+              <span class="badge badge-tech">REST</span>
             </div>
-            <!-- Example Project 2 -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Project Two</h5>
-                        <p class="card-text">A Library Management System . This project was developed in Java   </p>
-                    </div>
-                </div>
-            </div>
-            <!-- Example Project 3 -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Project Three</h5>
-                        <p class="card-text">A Hospital Management System. This project was developed in python </p>
-                    </div>
-                </div>
-            </div>
-
-     <!-- Example Project 4 -->
-     <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-body">
-                <h5 class="card-title">Project Four</h5>
-                <p class="card-text">Website Social Media Application. This project was created as a group of 3 which utilzes PHP </p>
-            </div>
+          </div>
+          <div class="mt-auto">
+            <!-- TODO: replace # with your repo URL -->
+            <a href="#" target="_blank" rel="noopener" class="btn btn-outline-dark btn-block">
+              <i class="fa-brands fa-github mr-1"></i> View on GitHub
+            </a>
+          </div>
         </div>
-    </div>
+      </div>
 
-     <!-- Example Project 5 -->
-     <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-body">
-                <h5 class="card-title">Project Five</h5>
-                <p class="card-text">Pending ! </p>
+      <!-- Project 3 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="project-card h-100 d-flex flex-column">
+          <div>
+            <h3 class="h5 mb-1">Library Management System</h3>
+            <p class="text-muted mb-2">Coursework</p>
+            <p class="mb-2">
+              Object-oriented Java system supporting book and member management, borrowing/returns, and reports.
+              Designed with clean OOP and separation of concerns.
+            </p>
+            <ul class="pl-3 mb-2">
+              <li>OOP (inheritance, encapsulation, polymorphism)</li>
+              <li>Modular design & testable components</li>
+            </ul>
+            <div class="mb-3">
+              <span class="badge badge-tech">Java</span>
+              <span class="badge badge-tech">OOP</span>
+              <span class="badge badge-tech">JUnit</span>
             </div>
+          </div>
+          <div class="mt-auto">
+            <!-- TODO: replace # with your repo URL -->
+            <a href="#" target="_blank" rel="noopener" class="btn btn-outline-dark btn-block">
+              <i class="fa-brands fa-github mr-1"></i> View on GitHub
+            </a>
+          </div>
         </div>
-    </div>
-   
+      </div>
 
-     <!-- Example Project 6 -->
-     <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-body">
-                <h5 class="card-title">Project Six</h5>
-                <p class="card-text">Pending!</p>
+      <!-- Project 4 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="project-card h-100 d-flex flex-column">
+          <div>
+            <h3 class="h5 mb-1">Hospital Management System</h3>
+            <p class="text-muted mb-2">Coursework (Python)</p>
+            <p class="mb-2">
+              A basic HMS prototype to manage patients, appointments, and staff records with a simple UI and
+              clean data handling logic.
+            </p>
+            <ul class="pl-3 mb-2">
+              <li>Patient/appointment CRUD</li>
+              <li>Validation & basic reporting</li>
+            </ul>
+            <div class="mb-3">
+              <span class="badge badge-tech">Python</span>
+              <span class="badge badge-tech">Flask (optional)</span>
+              <span class="badge badge-tech">SQLite/CSV</span>
             </div>
+          </div>
+          <div class="mt-auto">
+            <!-- TODO: replace # with your repo URL -->
+            <a href="#" target="_blank" rel="noopener" class="btn btn-outline-dark btn-block">
+              <i class="fa-brands fa-github mr-1"></i> View on GitHub
+            </a>
+          </div>
         </div>
-    </div>
-    </div>
-    </div>
-    
+      </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+      <!-- Project 5 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="project-card h-100 d-flex flex-column">
+          <div>
+            <h3 class="h5 mb-1">Social Media Web App</h3>
+            <p class="text-muted mb-2">Group project (3 people)</p>
+            <p class="mb-2">
+              Simple social app supporting profiles, posts, and interactions. Built collaboratively with clean PHP, HTML/CSS, and basic auth.
+            </p>
+            <ul class="pl-3 mb-2">
+              <li>Posts, comments, likes</li>
+              <li>Session-based auth & input validation</li>
+            </ul>
+            <div class="mb-3">
+              <span class="badge badge-tech">PHP</span>
+              <span class="badge badge-tech">HTML</span>
+              <span class="badge badge-tech">CSS</span>
+              <span class="badge badge-tech">MySQL/phpMyAdmin</span>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <!-- TODO: replace # with your repo URL -->
+            <a href="#" target="_blank" rel="noopener" class="btn btn-outline-dark btn-block">
+              <i class="fa-brands fa-github mr-1"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="col-md-6 col-lg-4 mb-4">
+        <div class="project-card h-100 d-flex flex-column">
+          <div>
+            <h3 class="h5 mb-1">Connect Four (AI)</h3>
+            <p class="text-muted mb-2">Nov 2023 – May 2023 · 74%</p>
+            <p class="mb-2">
+              AI-driven Connect Four game using Python and declarative strategy logic to predict and counter user moves.
+            </p>
+            <ul class="pl-3 mb-2">
+              <li>Game tree evaluation & heuristics</li>
+              <li>Replayable CLI/GUI</li>
+            </ul>
+            <div class="mb-3">
+              <span class="badge badge-tech">Python</span>
+              <span class="badge badge-tech">Algorithms</span>
+              <span class="badge badge-tech">Game Logic</span>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <!-- TODO: replace # with your repo URL -->
+            <a href="#" target="_blank" rel="noopener" class="btn btn-outline-dark btn-block">
+              <i class="fa-brands fa-github mr-1"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer (centred) -->
+  <footer id="site-footer">
+    © <span id="year"></span> Navid Khashaey
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

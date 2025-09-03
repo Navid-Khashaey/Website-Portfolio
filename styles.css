@@ -305,4 +305,32 @@ body {
   .timeline-marker{ left:0; }
 }
 
+/* Projects page polish */
+.projects-hero { margin-top: 48px; }
+.projects-hero h1 { color:#2F4F4F; font-weight:800; }
+.projects-hero .lead { color:#6c757d; }
+
+/* Card look (reuses your project-card style if present) */
+.project-card{
+  background:#fff;
+  border:1px solid rgba(2,32,71,.08);
+  border-radius:12px;
+  padding:16px 18px;
+  box-shadow:0 6px 16px rgba(0,0,0,.06);
+}
+
+/* Tech badges */
+.badge-tech{
+  display:inline-block;
+  background:#F0F8FF;
+  border:1px solid rgba(2,32,71,.08);
+  color:#2F4F4F;
+  font-weight:600;
+  border-radius:9999px;
+  padding:4px 10px;
+  margin:3px 6px 0 0;
+  font-size:.85rem;
+}
+
+
 }
