@@ -23,6 +23,44 @@ body {
     /* Coral color for toggler icon */
 }
 
+:root{
+  --bg: #F0F8FF;
+  --text: #2F4F4F;
+  --card: #ffffff;
+  --border: rgba(0,0,0,0.12);
+  --nav: #333333;
+  --navText: #ffffff;
+}
+
+html[data-theme="dark"]{
+  --bg: #0f172a;
+  --text: #e5e7eb;
+  --card: #111827;
+  --border: rgba(255,255,255,0.12);
+  --nav: #0b1220;
+  --navText: #e5e7eb;
+}
+
+/* Apply variables */
+body{
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.navbar{
+  background-color: var(--nav) !important;
+}
+
+.navbar a{
+  color: var(--navText) !important;
+}
+
+.card, #experience, #about-me{
+  background-color: var(--card) !important;
+  border-color: var(--border) !important;
+}
+
+
 /* Main Content */
 .container {
     margin-top: 50px;

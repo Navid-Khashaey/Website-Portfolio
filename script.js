@@ -4,6 +4,33 @@
   const $  = (sel, ctx = document) => ctx.querySelector(sel);
   const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
 
+    // Theme (Light/Dark) toggle with persistence
+  const root = document.documentElement;
+  const storedTheme = localStorage.getItem('theme');
+
+  const systemPrefersDark = window.matchMedia &&
+    window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  const initialTheme = storedTheme || (systemPrefersDark ? 'dark' : 'light');
+  root.setAttribute('data-theme', initialTheme);
+
+  const themeToggleBtn = document.getElementById('themeToggle');
+  const setBtnText = () => {
+    const isDark = root.getAttribute('data-theme') === 'dark';
+    if (themeToggleBtn) themeToggleBtn.textContent = isDark ? 'Light mode' : 'Dark mode';
+  };
+  setBtnText();
+
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      const current = root.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      setBtnText();
+    });
+  }
+
   
   const yearEl = $('#year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
